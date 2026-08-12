@@ -327,37 +327,50 @@ SceneBackground
 
 These components are responsible for rendering the different computer architecture concepts.
 
-🛠️ Technologies Used
-Frontend
-React
-TypeScript
-Vite
-3D Visualization
-Three.js
-React Three Fiber
-React Three Drei
-UI
-Tailwind CSS
-Lucide React
-Framer Motion
-Development
-Node.js
-npm
-Git
-GitHub
-Deployment
-Vercel
-📁 Project Structure
+# 🛠️ Technologies Used
+
+## Frontend
+
+- React
+- TypeScript
+- Vite
+
+## 3D Visualization
+
+- Three.js
+- React Three Fiber
+- React Three Drei
+
+## UI
+
+- Tailwind CSS
+- Lucide React
+- Framer Motion
+
+## Development
+
+- Node.js
+- npm
+- Git
+- GitHub
+
+## Deployment
+
+- Vercel
+
+---
+
+# 📁 Project Structure
+
+```text
 CPU-3D-LAB/
 │
 ├── public/
 │
 ├── src/
-│   │
 │   ├── assets/
 │   │
 │   ├── components/
-│   │   │
 │   │   ├── 3d/
 │   │   │   ├── CacheHierarchyScene.tsx
 │   │   │   ├── CacheHitMissScene.tsx
@@ -396,24 +409,53 @@ CPU-3D-LAB/
 ├── tsconfig.node.json
 ├── .gitignore
 └── README.md
-🔄 Application Workflow
+# 🔄 Application Workflow
 
-The general workflow of the application is:
+The general workflow of CPU 3D Lab is:
 
-                 CPU 3D LAB
-                     │
-          ┌──────────┴──────────┐
-          │                     │
-     CPU Pipeline          Cache System
-          │                     │
-     ┌────┴────┐         ┌──────┴──────┐
-     │         │         │             │
- Pipeline   Hazards    Hit/Miss     Cache Types
-     │         │         │             │
- IF → ID → EX → MEM → WB       Mapping / Replacement
-     │
-     ↓
- Interactive 3D Visualization
+```text
+                         CPU 3D LAB
+                              │
+                 ┌────────────┴────────────┐
+                 │                         │
+           CPU Pipeline              Cache System
+                 │                         │
+          ┌──────┴──────┐          ┌──────┴──────┐
+          │             │          │             │
+       Pipeline      Hazards    Hit / Miss    Cache Types
+          │             │          │             │
+          │       ┌─────┼─────┐    │       ┌─────┴─────────┐
+          │       │     │     │    │       │               │
+          │      RAW  Branch Structural    Mapping     Replacement
+          │
+          ↓
+    IF → ID → EX → MEM → WB
+          │
+          ↓
+CPU Pipeline
+    │
+    ├── IF  → Instruction Fetch
+    ├── ID  → Instruction Decode
+    ├── EX  → Execute
+    ├── MEM → Memory Access
+    └── WB  → Write Back
+
+Pipeline Hazards
+    │
+    ├── Clean
+    ├── RAW / Data Hazard
+    ├── Branch Hazard
+    └── Structural Hazard
+
+Cache System
+    │
+    ├── Cache Hit
+    ├── Cache Miss
+    ├── Cache Mapping
+    ├── Cache Replacement
+    └── Memory Speed
+   Interactive 3D Visualization
+
 🖥️ Installation
 Prerequisites
 
