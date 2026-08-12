@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx.cmd vite build",
-    "preview": "npx.cmd vite preview"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@react-three/drei": "^10.0.9",
