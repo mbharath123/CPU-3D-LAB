@@ -351,7 +351,6 @@ export function App() {
         cycleStarted: 1,
         isStalled: false,
         isForwarded: false,
-        isFlushed: false,
       },
       {
         id: 2,
@@ -362,7 +361,6 @@ export function App() {
         cycleStarted: 2,
         isStalled: false,
         isForwarded: false,
-        isFlushed: false,
       },
       {
         id: 3,
@@ -373,7 +371,6 @@ export function App() {
         cycleStarted: 3,
         isStalled: false,
         isForwarded: false,
-        isFlushed: false,
       },
       {
         id: 4,
@@ -384,7 +381,6 @@ export function App() {
         cycleStarted: 4,
         isStalled: false,
         isForwarded: false,
-        isFlushed: false,
       },
       {
         id: 5,
@@ -395,7 +391,6 @@ export function App() {
         cycleStarted: 5,
         isStalled: false,
         isForwarded: false,
-        isFlushed: false,
       },
     ]);
   };
