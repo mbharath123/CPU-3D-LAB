@@ -480,14 +480,23 @@ The project can be deployed using Vercel.
 
 Deployment Process
 Local Project
+
      ↓
+
 Git
+
      ↓
+
 GitHub
+
      ↓
+
 Vercel
+
      ↓
+
 Production Website
+
 1. Commit changes
 git add .
 2. Create a commit
