@@ -257,19 +257,22 @@ Set-Associative Mapping
 
 In set-associative mapping, a memory block maps to a particular set but can occupy one of multiple lines within that set.
 
-Memory Block
-     ↓
-    Set
-     ↓
+## Fully Associative Mapping
 
- ┌───────┐
- 
- │  Line 1 │
- 
- │  Line 2 │
- 
- └───────┘
-Fully Associative Mapping
+In fully associative mapping, a memory block can be placed in any available cache line.
+
+```text
+Memory Block
+     │
+     ▼
+    Set
+     │
+     ▼
+┌─────────────┐
+│ Any Cache   │
+│    Line     │
+└─────────────┘
+```
 
 In fully associative mapping, a memory block can be placed in any available cache line.
 
