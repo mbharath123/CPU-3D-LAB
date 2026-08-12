@@ -8,7 +8,8 @@ export type SectionId =
   | 'replacement' 
   | 'performance' 
   | 'race' 
-  | 'quiz';
+  | 'quiz'
+  | 'process';
 
 export interface PipelineStageInfo {
   id: string;

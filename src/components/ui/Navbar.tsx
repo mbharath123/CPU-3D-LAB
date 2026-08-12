@@ -11,6 +11,7 @@ import {
   Activity,
   Gauge,
   HelpCircle,
+  Workflow,
   Volume2,
   VolumeX,
   Maximize2
@@ -37,7 +38,9 @@ const NAV_ITEMS: { id: SectionId; label: string; icon: React.ReactNode }[] = [
   { id: 'replacement', label: 'Eviction', icon: <RefreshCw className="w-4 h-4" /> },
   { id: 'performance', label: 'AMAT Stats', icon: <Activity className="w-4 h-4" /> },
   { id: 'race', label: 'Speed Race', icon: <Gauge className="w-4 h-4" /> },
+  { id: 'process', label: 'Process', icon: <Workflow className="w-4 h-4" /> },
   { id: 'quiz', label: 'Quizzes', icon: <HelpCircle className="w-4 h-4" /> },
+  
 ];
 
 export const Navbar: React.FC<NavbarProps> = ({

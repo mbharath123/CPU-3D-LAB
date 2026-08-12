@@ -18,6 +18,7 @@ import { PipelineControls } from './components/ui/PipelineControls';
 import { CacheAddressDecoder } from './components/ui/CacheAddressDecoder';
 import { HolographicDashboard } from './components/ui/HolographicDashboard';
 import { EducationalModal } from './components/ui/EducationalModal';
+import { ProcessWorking } from './components/ui/ProcessWorking';
 import { QuizModal } from './components/ui/QuizModal';
 
 import { SceneBackground } from './components/3d/SceneBackground';
@@ -728,6 +729,9 @@ export function App() {
           )}
         </Canvas>
       </div>
+      {currentSection === 'process' && (
+        <ProcessWorking />
+      )}
 
       {/* =====================================================
           FOREGROUND UI LAYER
