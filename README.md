@@ -409,6 +409,7 @@ CPU-3D-LAB/
 ├── tsconfig.node.json
 ├── .gitignore
 └── README.md
+
 # 🔄 Application Workflow
 
 The general workflow of CPU 3D Lab is:
@@ -432,6 +433,9 @@ The general workflow of CPU 3D Lab is:
     IF → ID → EX → MEM → WB
           │
           ↓
+
+Main application modules
+
 CPU Pipeline
     │
     ├── IF  → Instruction Fetch
