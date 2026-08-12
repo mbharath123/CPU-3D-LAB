@@ -261,9 +261,13 @@ Memory Block
      ↓
     Set
      ↓
+
  ┌───────┐
+ 
  │ Line 1│
+ 
  │ Line 2│
+ 
  └───────┘
 Fully Associative Mapping
 
