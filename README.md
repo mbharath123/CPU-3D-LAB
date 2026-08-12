@@ -4,6 +4,7 @@ Interactive 3D CPU Pipelining & Cache Architecture Visualization
 CPU 3D Lab is an interactive educational web application designed to visualize CPU pipeline execution, pipeline hazards, cache architecture, cache hit/miss behavior, cache mapping, cache replacement, memory hierarchy, and memory access speed using interactive 3D visualizations.
 
 The project combines React, TypeScript, Three.js, React Three Fiber, and Vite to create a visual environment where computer architecture concepts can be explored rather than only read as theory.
+
 📌 Project Overview
 
 Computer architecture concepts such as CPU pipelining and cache memory can be difficult to understand through diagrams and static textbook explanations.
@@ -23,6 +24,7 @@ Memory-speed comparisons
 Pipeline hazard visualization
 Interactive educational explanations
 Quiz and scoring features
+
 🎯 Objectives
 
 The main objectives of CPU 3D Lab are:
@@ -42,6 +44,7 @@ Visualize cache replacement and eviction.
 Compare memory access speeds.
 Provide interactive educational explanations.
 Make computer architecture concepts easier to understand through visualization.
+
 🧠 CPU Pipeline
 
 The project models the classical five-stage instruction pipeline:
@@ -123,6 +126,7 @@ Instruction B
   forwarding
 
 The interface displays a forwarding path when the data hazard is active.
+
 2. Control Hazard
 
 A control hazard can occur when the CPU encounters a branch instruction and the next instruction is uncertain.
